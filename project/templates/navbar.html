@@ -1,5 +1,7 @@
 <div>
+    
     <span>Home</span>
     <span>My Portfolio</span>
-    <span>Contact Me</span>
+    {% url 'contact' as contact_url %}
+    <span>{% if request.path == contact_url %}Contact{% else %}<a href="{% url 'contact' %}">Contact</a>{% endif %}</span>
 </div>
