@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset = "utf-8">
-	<title>My Portfolio | Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
+{% extends 'base.html' %}
 
+{% block content %}
 <h1>Edgar Santana</h1>
 <ul id="skills">
 	<li>HTML</li>
@@ -34,8 +27,4 @@ I started teaching myself how to code around 7 years ago and I fell in love with
 
 {% include 'navbar.html' %}
 
-<footer>
-	<p class="copyright">Copyright 2021, Edgar Santana</p>
-</footer>
-</body>
-</html>
+{% endblock %}
