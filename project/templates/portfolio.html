@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -12,7 +13,7 @@
 
 <div class="first-row">
 	<div id="wrapper-1">
-		<a href="https://github.com/santanacodec/Techdegree-Project-3"><img class="portfolio-image" src="images/registrationform.png" alt="Registration Form"></a>
+		<a href="https://github.com/santanacodec/Techdegree-Project-3"><img class="portfolio-image" src="{% static 'theme/images/registrationform.png' %}" alt="Registration Form"></a>
 		<h3>Registration Form</h3>
 		<h4>HTML, CSS</h4>
 		<p class="portfolio-text">A registration form to demonstrate HTML and CSS responsive skills.</p>
