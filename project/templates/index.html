@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 <h1>Edgar Santana</h1>
@@ -13,7 +14,7 @@
 	<li>Django</li>
 </ul>
 
-<img id="edgar" src = "images/edgar.png" alt="Edgar Santana">
+<img id="edgar" src = "{% static 'images/edgar.png' %}" alt="Edgar Santana">
 
 <h2>About Me</h2>
 <div id="socials">
