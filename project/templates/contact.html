@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Contact{% endblock %}
 
@@ -10,5 +11,6 @@
 <hr>
 
 <h2><u>Send Me A Message!</u></h2>
+<img id="message" src = "{% static 'theme/images/mail.png' %}" alt="Mail Image">
 
-{% endblock%}
+{% endblock %}
