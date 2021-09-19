@@ -15,9 +15,17 @@
 
 <fieldset class="contact">
     <div  class="container">
-    <label for="name" class="full-name">Full Name</label>
-    <input type="text" id="name" name="user_name" required placeholder="Required">
+        <label for="name" class="full-name">Full Name</label>
+        <input type="text" id="name" name="user_name" required placeholder="Required">
     </div>
+
+    <div  class="container">
+        <label for="mail">Email Address</label>
+        <input type="email" id="mail" name="user_mail" required placeholder="Required">
+    </div>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="user_message" rows="5"></textarea>
 </fieldset>
 
 {% endblock %}
