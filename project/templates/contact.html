@@ -10,22 +10,25 @@
 
 <hr>
 
-<h2><u>Send Me A Message!</u></h2>
-<img id="message" src = "{% static 'theme/images/mail.png' %}" alt="Mail Image">
+<form action="contact.html" method="post">
+    <h2><u>Send Me A Message!</u></h2>
+    <img id="message" src = "{% static 'theme/images/mail.png' %}" alt="Mail Image">
 
-<fieldset class="contact">
-    <div  class="container">
-        <label for="name" class="full-name">Full Name</label>
-        <input type="text" id="name" name="user_name" required placeholder="Required">
-    </div>
+    <fieldset class="contact">
+        <div  class="container">
+            <label for="name" class="full-name">Full Name</label>
+            <input type="text" id="name" name="user_name" required placeholder="Required">
+        </div>
 
-    <div  class="container">
-        <label for="mail">Email Address</label>
-        <input type="email" id="mail" name="user_mail" required placeholder="Required">
-    </div>
+        <div  class="container">
+            <label for="mail">Email Address</label>
+            <input type="email" id="mail" name="user_mail" required placeholder="Required">
+        </div>
 
-    <label for="message">Message</label>
-    <textarea id="message" name="user_message" rows="5"></textarea>
-</fieldset>
+        <label for="message">Message</label>
+        <textarea id="message" name="user_message" rows="5"></textarea>
+    </fieldset>
+    <button type="submit">Send</button>
+</form>
 
 {% endblock %}
