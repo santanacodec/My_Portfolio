@@ -10,4 +10,7 @@ body {
   background-size: cover;
 }
 
-
+ul {
+  background-color: none;
+  color:white;
+}
