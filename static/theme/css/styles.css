@@ -245,7 +245,7 @@ footer .copyright {
 form {
 	padding: 15px;
 	margin: auto;
-  max-width: 90%;
+  max-width: 900px;
 }
 
 fieldset {
@@ -258,12 +258,18 @@ fieldset {
 
 legend {
 	font-weight: bold;
-	font-size: 18px;
-	padding-bottom: 25px;
-	padding-top: 20px;
+	font-size: 20x;
   color:white;
 }
 
 label {
 	color: white;
+}
+
+#message-img {
+  width: 100px;
+}
+
+.sbutton {
+  margin-top: 10px;
 }

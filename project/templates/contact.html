@@ -11,14 +11,12 @@
 <hr>
 
     <div class="form-top">
-        <h2 class="text-center"><u>Send Me A Message!</u></h2>
-        <img id="message" src = "{% static 'theme/images/mail.png' %}" alt="Mail Image">
+        <img id="message-img" class="img-fluid mx-auto d-block"  src = "{% static 'theme/images/mail.png' %}" alt="Mail Image">
     </div>
-    <hr>
 
     <form action="contact.html" method="post">
     <fieldset class="contact">
-        <legend>Contact Info</legend>
+        <legend class="text-center">Send Me A Message!</legend>
         <div class="form-group">
             <label for="name" class="full-name">Full Name</label>
             <input type="text" class="form-control" id="name" name="user_name" required placeholder="Required">
@@ -33,7 +31,7 @@
             <textarea class="form-control" id="message" name="user_message" rows="5"></textarea>
         </div>
     </fieldset>
-    <button type="submit" class="btn btn-primary">Send</button>
+    <button type="submit" class="btn btn-primary sbutton">Send</button>
 </form>
 
 {% endblock %}
