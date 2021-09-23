@@ -161,7 +161,6 @@ footer .copyright {
 #wrapper-1 {
   display: inline-block;
   width: 450px;
-  float:left;
   max-height: 575px;
   background-color: hsl(0,0%,0%, .4);
   padding: 20px;
@@ -173,7 +172,6 @@ footer .copyright {
 #wrapper-2 {
   display: inline-block;
   width: 450px;
-  float:none;
   max-height: 575px;
   background-color: hsl(0,0%,0%, .4);
   padding: 20px;
@@ -183,7 +181,6 @@ footer .copyright {
 #wrapper-3 {
   display: inline-block;
   width: 450px;
-  float: right;
   max-height: 575px;
   background-color: hsl(0,0%,0%, .4);
   padding: 20px;
