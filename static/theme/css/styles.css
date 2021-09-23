@@ -142,9 +142,16 @@ footer .copyright {
   color: white;
 }
 
+/*
 .portfolio-image:hover {
   box-shadow: 0 0 40px white;
   border: solid 3px black;
+}
+*/
+
+.rows {
+  display: inline;
+  max-width: 100%;
 }
 
 
