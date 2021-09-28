@@ -1,10 +1,10 @@
 <nav class="navigation">
 	<ul>
         {% url 'public:index' as index_url %}
-		<li>{% if request.path == index_url %}Home{% else %}<a href="{% url 'index' %}">Home</a>{% endif %}</li>
+		<li>{% if request.path == index_url %}Home{% else %}<a href="{% url 'public:index' %}">Home</a>{% endif %}</li>
 		{% url 'public:portfolio' as portfolio_url %}
-        <li>{% if request.path == portfolio_url %}My Portfolio{% else %}<a href="{% url 'portfolio' %}">My Portfolio</a>{% endif %}</li>
+        <li>{% if request.path == portfolio_url %}My Portfolio{% else %}<a href="{% url 'public:portfolio' %}">My Portfolio</a>{% endif %}</li>
         {% url 'contact:contact' as contact_url %}
-		<li>{% if request.path == contact_url %}Contact{% else %}<a href="{% url 'contact' %}">Contact</a>{% endif %}</li>
+		<li>{% if request.path == contact_url %}Contact{% else %}<a href="{% url 'contact:contact' %}">Contact</a>{% endif %}</li>
 	</ul>
 </nav>
