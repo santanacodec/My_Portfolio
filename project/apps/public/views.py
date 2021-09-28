@@ -8,6 +8,3 @@ def index(request: HttpRequest) -> HttpResponse:
 
 def portfolio(request: HttpRequest) -> HttpResponse:
     return render(request, 'portfolio.html')
-
-def contact(request: HttpRequest) -> HttpResponse:
-    return render(request, 'contact.html')
