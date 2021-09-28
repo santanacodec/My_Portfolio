@@ -13,23 +13,32 @@
     <div class="form-top">
         <img id="message-img" class="img-fluid mx-auto d-block"  src = "{% static 'theme/images/mail.png' %}" alt="Mail Image">
     </div>
+    {% if success %}
+    <div class="alert alert-success" role="alert">
+        Your message was sent! Check your inbox for a response!
+    </div>
+    {% endif %}
 
-    <form action="contact.html" method="post">
+    <form method="post">
+        {% csrf_token %}
+
+        {% if form.non_field_errors%}
+        <div class="alert alert-danger" role="alert">
+            {{ form.non_field_errors }}
+        </div>
+        {% endif %}
     <fieldset class="contact">
+        
         <legend class="text-center">Send Me A Message!</legend>
+        {% for field in form %}
         <div class="form-group">
-            <label for="name" class="full-name">Full Name</label>
-            <input type="text" class="form-control" id="name" name="user_name" required placeholder="Required">
+            {{ field.label_tag }}
+            {{ field }}    
+            {% for error in field.errors %}
+            <p class="help-block text-danger">{{error}}</p>
+            {% endfor %}
         </div>
-
-        <div class="form-group">
-            <label for="mail">Email Address</label>
-            <input type="email" class="form-control" id="mail" name="user_mail" required placeholder="Required">
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea class="form-control" id="message" name="user_message" rows="5"></textarea>
-        </div>
+        {% endfor %}
     </fieldset>
     <button type="submit" class="btn btn-primary sbutton">Send</button>
 </form>
