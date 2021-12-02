@@ -8,9 +8,6 @@ from project import settings
 
 from.forms import ContactForm
 
-from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
-
 def contact(request: HttpRequest) -> HttpResponse:
     if request.method == "GET": 
         form = ContactForm()        
