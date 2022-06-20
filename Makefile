@@ -1,5 +1,5 @@
 build:	
-	docker build --force-rm $(options) -t my_portfolio_website:latest .
+	docker build --force-rm $(options) -t my_portfolio:latest .
 
 build-prod:
 	$(MAKE) build options="--target production"
