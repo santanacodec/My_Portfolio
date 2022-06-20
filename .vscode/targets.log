@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 03:14:41 2022
+# Make data base, printed on Mon Jun 20 03:21:13 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\santa
 # environment
 LOCALAPPDATA = C:\Users\santa\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b185ce40-e8cf-4d26-af1f-cf72742f8bfd-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a0f56cd6-819a-464d-9223-0c37417ae55b-sock
 # environment
 VSCODE_CWD = C:\Users\santa\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +39,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10224_HOKBUEUPTUZIYHEZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21788_OXUODCDAMTAHOPPF
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -93,7 +93,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 10224
+VSCODE_PID = 21788
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -217,9 +217,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655709187): 18 files, no impossibilities.
+# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655709555): 17 files, no impossibilities.
 
-# 18 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -247,7 +247,8 @@ push:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
 	docker tag $(image):latest $(organization)/$(image):$(tag)
-	docker push $(organization)/$(image):$(tag)
+	docker push $(organization)/$(image): 
+$(tag)
 
 # Not a target:
 .DEFAULT:
@@ -303,15 +304,14 @@ compose-stop:
 
 # No 'vpath' search paths.
 
-# No general ('VPATH' variable) s 
-earch path.
+# No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 28 / storage = 295 B / avg = 10 B
-# current buf: size = 8174 B / used = 295 B / count = 28 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 27 / storage = 291 B / avg = 10 B
+# current buf: size = 8174 B / used = 291 B / count = 27 / avg = 10 B
 
-# strcache performance: lookups = 39 / hit rate = 28%
+# strcache performance: lookups = 38 / hit rate = 28%
 # hash-table stats:
-# Load=28/8192=0%, Rehash=0, Collisions=0/39=0%
-# Finished Make data base on Mon Jun 20 03:14:41 2022
+# Load=27/8192=0%, Rehash=0, Collisions=0/38=0%
+# Finished Make data base on Mon Jun 20 03:21:13 2022
 
  

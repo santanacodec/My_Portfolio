@@ -1,2 +1,6 @@
 project/secrets.py
 pyvenv.cfg
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
