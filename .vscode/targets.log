@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 03:21:13 2022
+# Make data base, printed on Mon Jun 20 09:25:11 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -23,7 +25,7 @@ USERPROFILE = C:\Users\santa
 # environment
 LOCALAPPDATA = C:\Users\santa\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-a0f56cd6-819a-464d-9223-0c37417ae55b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dbedad94-0bcc-4967-815f-f5c6c66f491d-sock
 # environment
 VSCODE_CWD = C:\Users\santa\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -39,7 +41,9 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21788_OXUODCDAMTAHOPPF
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15720_SZVNRNUUHPDWHGQB
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -93,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 21788
+VSCODE_PID = 15720
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -209,7 +213,7 @@ PROCESSOR_REVISION = a701
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=98/1024=10%, Rehash=0, Collisions=10/125=8%
+# Load=100/1024=10%, Rehash=0, Collisions=11/127=9%
 
 # Pattern-specific Variable Values
 
@@ -217,9 +221,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655709555): 17 files, no impossibilities.
+# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655710977): 21 files, no impossibilities.
 
-# 17 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -247,8 +251,7 @@ push:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
 	docker tag $(image):latest $(organization)/$(image):$(tag)
-	docker push $(organization)/$(image): 
-$(tag)
+	docker push $(organization)/$(image):$(tag)
 
 # Not a target:
 .DEFAULT:
@@ -299,19 +302,20 @@ compose-stop:
 	docker-compose down --remove-orphans $(options)
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=11 
+/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 291 B / avg = 10 B
-# current buf: size = 8174 B / used = 291 B / count = 27 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 344 B / avg = 11 B
+# current buf: size = 8174 B / used = 344 B / count = 31 / avg = 11 B
 
-# strcache performance: lookups = 38 / hit rate = 28%
+# strcache performance: lookups = 42 / hit rate = 26%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=0/38=0%
-# Finished Make data base on Mon Jun 20 03:21:13 2022
+# Load=31/8192=0%, Rehash=0, Collisions=0/42=0%
+# Finished Make data base on Mon Jun 20 09:25:11 2022
 
  
