@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 01:49:52 2022
+# Make data base, printed on Mon Jun 20 03:14:41 2022
 
 # Variables
 
@@ -16,12 +16,14 @@ make: *** No rule to make target 'all'.  Stop.
 SYSTEMDRIVE = C:
 # environment
 LC_ALL = C
+# makefile (from 'Makefile', line 3)
+image = myportfolio
 # environment
 USERPROFILE = C:\Users\santa
 # environment
 LOCALAPPDATA = C:\Users\santa\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c49fe04d-0ae0-4efb-b6db-5937638b7d0e-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b185ce40-e8cf-4d26-af1f-cf72742f8bfd-sock
 # environment
 VSCODE_CWD = C:\Users\santa\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -37,7 +39,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7712_POOUKEVJBSTYRVOE
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10224_HOKBUEUPTUZIYHEZ
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -91,7 +93,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 7712
+VSCODE_PID = 10224
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -100,6 +102,8 @@ VSCODE_PID = 7712
 <D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 2)
+organization = atainter
 # environment
 ONEDRIVECONSUMER = C:\Users\santa\OneDrive
 # default
@@ -134,6 +138,8 @@ MAKEFILES :=
 PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 133001777067284669
+# makefile (from 'Makefile', line 1)
+tag = latest
 # environment
 LOGONSERVER = \\DESKTOP-LEP3NSJ
 # environment
@@ -203,7 +209,7 @@ PROCESSOR_REVISION = a701
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=95/1024=9%, Rehash=0, Collisions=9/122=7%
+# Load=98/1024=10%, Rehash=0, Collisions=10/125=8%
 
 # Pattern-specific Variable Values
 
@@ -211,7 +217,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655700592): 18 files, no impossibilities.
+# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655709187): 18 files, no impossibilities.
 
 # 18 files, no impossibilities in 1 directories.
 
@@ -225,15 +231,23 @@ compose-manage-py:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 14):
+#  recipe to execute (from 'Makefile', line 22):
 	docker-compose run --r $(options) website python manage.py $(cmd)
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-20 01:35:53
+#  Last modified 2022-06-20 01:57:40
 #  File has been updated.
 #  Successfully updated.
+
+push:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 12):
+	docker tag $(image):latest $(organization)/$(image):$(tag)
+	docker push $(organization)/$(image):$(tag)
 
 # Not a target:
 .DEFAULT:
@@ -252,44 +266,52 @@ build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 2):
+#  recipe to execute (from 'Makefile', line 6):
 	docker build --force-rm $(options) -t my_portfolio:latest .
 
 build-prod:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 5):
+#  recipe to execute (from 'Makefile', line 9):
 	$(MAKE) build options="--target production"
 
 compose-start:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 8):
+#  recipe to execute (from 'Makefile', line 16):
 	docker-compose up --remove-orphans $(options)
+
+start-server:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	python manage.py runserver 0.0.0.0:80
 
 compose-stop:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 11):
+#  recipe to execute (from 'Makefile', line 19):
 	docker-compose down --remove-orphans $(options)
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/19=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
-# No general ('VPATH' variable) search path.
+# No general ('VPATH' variable) s 
+earch path.
 
-# strcache buffers: 1 (0) / strings = 26 / storage = 256 B / avg = 9 B
-# current buf: size = 8174 B / used = 256 B / count = 26 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 28 / storage = 295 B / avg = 10 B
+# current buf: size = 8174 B / used = 295 B / count = 28 / avg = 10 B
 
-# strcache performance: lookups = 35 / hit rate = 25%
+# strcache performance: lookups = 39 / hit rate = 28%
 # hash-table stats:
-# Load=26/8192=0%, Rehash=0, Collisions=0/35=0%
-# Finished Make data base on Mon Jun 20 01:49:52 2022
+# Load=28/8192=0%, Rehash=0, Collisions=0/39=0%
+# Finished Make data base on Mon Jun 20 03:14:41 2022
 
  
