@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Jun 20 09:25:11 2022
+# Make data base, printed on Mon Jun 20 19:47:21 2022
 
 # Variables
 
@@ -25,7 +25,7 @@ USERPROFILE = C:\Users\santa
 # environment
 LOCALAPPDATA = C:\Users\santa\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dbedad94-0bcc-4967-815f-f5c6c66f491d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b5762d78-6ae0-4d0e-b25d-74eebe27325b-sock
 # environment
 VSCODE_CWD = C:\Users\santa\AppData\Local\Programs\Microsoft VS Code
 # environment
@@ -41,7 +41,7 @@ MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15720_SZVNRNUUHPDWHGQB
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_20536_HFNPQBSUEIYBRXVI
 # environment
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
@@ -97,7 +97,7 @@ MAKEFILE_LIST := Makefile
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 15720
+VSCODE_PID = 20536
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # automatic
@@ -221,7 +221,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 167 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655710977): 21 files, no impossibilities.
+# . (key c:/Users/santa/OneDrive/Documents/GitHub/My_Portfolio, mtime 1655732443): 21 files, no impossibilities.
 
 # 21 files, no impossibilities in 1 directories.
 
@@ -302,20 +302,19 @@ compose-stop:
 	docker-compose down --remove-orphans $(options)
 
 # files hash-table stats:
-# Load=11 
-/1024=1%, Rehash=0, Collisions=0/21=0%
+# Load=11/1024=1%, Rehash=0, Collisions=0/21=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 31 / storage = 344 B / avg = 11 B
-# current buf: size = 8174 B / used = 344 B / count = 31 / avg = 11 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 323 B / avg = 10 B
+# current buf: size = 8174 B / used = 323 B / count = 31 / avg = 10 B
 
 # strcache performance: lookups = 42 / hit rate = 26%
 # hash-table stats:
 # Load=31/8192=0%, Rehash=0, Collisions=0/42=0%
-# Finished Make data base on Mon Jun 20 09:25:11 2022
+# Finished Make data base on Mon Jun 20 19:47:21 2022
 
  
